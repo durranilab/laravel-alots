@@ -1,0 +1,37 @@
+{
+    "name": "bhavinjr/laravel-alots",
+    "description": "Laravel SMS APIs for alots",
+    "keywords": [
+      "laravel", "laravel sms", "sms laravel", "alots sms","alots sms laravel", "laravel alots sms"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bhavin Rudani",
+            "email": "bhavinrudani94@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.0",
+        "illuminate/support": "^5.4|^5.5|^5.6|^5.7|^5.8|^6.0|^7.0",
+        "illuminate/database": "^5.4|^5.5|^5.6|^5.7|^5.8|^6.0|^7.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bhavinjr\\Alots\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bhavinjr\\Alots\\Providers\\AlotsServiceProvider"
+            ],
+            "aliases": {
+                "Alots": "Bhavinjr\\Alots\\Facades\\Alots"
+            }
+        }
+    }
+}
