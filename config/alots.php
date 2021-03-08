@@ -21,6 +21,8 @@ return [
 
     'route' => env('ALOTS_ROUTE', 'TSTSMS'),
 
+    'template_id' => env('ALOTS_TEMPLATE_ID', null),
+
     'table_names' => [
         'messages'    => 'alots_messages',
     ],

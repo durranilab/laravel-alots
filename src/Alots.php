@@ -6,13 +6,14 @@ use Bhavinjr\Alots\Errors;
 
 class Alots extends Entity
 {
-    public function simpleSms($receiver, $message_text)
+    public function simpleSms($receiver, $message_text, $template_id = null)
     {
         try {
             $payload = [
                 'apirequest' => self::API_REQUEST_TEXT,
                 'mobile' 	=> 	$receiver,
-                'message' 	=> 	$message_text
+                'message' 	=> 	$message_text,
+                'templateId' => $template_id ?? config('alots.template_id')
             ];
 
             return $this->sendSms('GET', $payload);
@@ -24,13 +25,14 @@ class Alots extends Entity
         }
     }
 
-    public function unicodeSms($receiver, $message_text)
+    public function unicodeSms($receiver, $message_text, $template_id = null)
     {
         try {
             $payload = [
                 'apirequest' => self::API_REQUEST_UNICODE,
                 'mobile' 	=> 	$receiver,
-                'message' 	=> 	$message_text
+                'message' 	=> 	$message_text,
+                'templateId' => $template_id ?? config('alots.template_id')
             ];
 
             return $this->sendSms('GET', $payload);
@@ -42,14 +44,15 @@ class Alots extends Entity
         }
     }
 
-    public function scheduleSms($receiver, $message_text, $datetime)
+    public function scheduleSms($receiver, $message_text, $datetime, $template_id = null)
     {
         try {
             $payload = [
-                'apirequest' => self::API_REQUEST_SCHEDULE,
-                'mobile' 	=> 	$receiver,
-                'message' 	=> 	$message_text,
-                'datetime'	=>	$datetime
+                'apirequest'    =>  self::API_REQUEST_SCHEDULE,
+                'mobile'        => 	$receiver,
+                'message'       => 	$message_text,
+                'datetime'      =>	$datetime,
+                'templateId'    =>  $template_id ?? config('alots.template_id')
             ];
 
             return $this->sendSms('GET', $payload);
@@ -61,13 +64,14 @@ class Alots extends Entity
         }
     }
 
-    public function groupSms($group_id, $message_text)
+    public function groupSms($group_id, $message_text, $template_id = null)
     {
         try {
             $payload = [
-                'apirequest' => self::API_REQUEST_GROUP,
-                'message' 	=> 	$message_text,
-                'groupid'	=>	$group_id
+                'apirequest'    =>  self::API_REQUEST_GROUP,
+                'message'       => 	$message_text,
+                'groupid'       =>	$group_id,
+                'templateId'    =>  $template_id ?? config('alots.template_id')
             ];
 
             return $this->sendSms('GET', $payload);
