@@ -13,7 +13,7 @@ class Alots extends Entity
                 'apirequest' => self::API_REQUEST_TEXT,
                 'mobile' 	=> 	$receiver,
                 'message' 	=> 	$message_text,
-                'templateId' => $template_id ?? config('alots.template_id')
+                'TemplateID' => $template_id ?? config('alots.template_id')
             ];
 
             return $this->sendSms('GET', $payload);
@@ -32,7 +32,7 @@ class Alots extends Entity
                 'apirequest' => self::API_REQUEST_UNICODE,
                 'mobile' 	=> 	$receiver,
                 'message' 	=> 	$message_text,
-                'templateId' => $template_id ?? config('alots.template_id')
+                'TemplateID' => $template_id ?? config('alots.template_id')
             ];
 
             return $this->sendSms('GET', $payload);
@@ -52,7 +52,7 @@ class Alots extends Entity
                 'mobile'        => 	$receiver,
                 'message'       => 	$message_text,
                 'datetime'      =>	$datetime,
-                'templateId'    =>  $template_id ?? config('alots.template_id')
+                'TemplateID'    =>  $template_id ?? config('alots.template_id')
             ];
 
             return $this->sendSms('GET', $payload);
@@ -71,7 +71,7 @@ class Alots extends Entity
                 'apirequest'    =>  self::API_REQUEST_GROUP,
                 'message'       => 	$message_text,
                 'groupid'       =>	$group_id,
-                'templateId'    =>  $template_id ?? config('alots.template_id')
+                'TemplateID'    =>  $template_id ?? config('alots.template_id')
             ];
 
             return $this->sendSms('GET', $payload);
