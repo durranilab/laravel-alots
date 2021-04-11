@@ -1,6 +1,6 @@
 <?php
 
-namespace Bhavinjr\Alots\Models;
+namespace Durranilab\Alots\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

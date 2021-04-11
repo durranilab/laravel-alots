@@ -1,8 +1,8 @@
 <?php
 
-namespace Bhavinjr\Alots;
+namespace Durranilab\Alots;
 
-use Bhavinjr\Alots\Models\AlotsMessage;
+use Durranilab\Alots\Models\AlotsMessage;
 
 class Entity extends Api
 {

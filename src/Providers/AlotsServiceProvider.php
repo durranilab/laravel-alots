@@ -1,10 +1,10 @@
 <?php
 
-namespace Bhavinjr\Alots\Providers;
+namespace Durranilab\Alots\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Bhavinjr\Alots\Alots;
-use Bhavinjr\Alots\Api;
+use Durranilab\Alots\Alots;
+use Durranilab\Alots\Api;
 
 class AlotsServiceProvider extends ServiceProvider
 {

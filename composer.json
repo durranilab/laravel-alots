@@ -1,6 +1,6 @@
 {
-    "name": "bhavinjr/laravel-alots",
-    "description": "Laravel SMS APIs for alots",
+    "name": "durranilab/laravel-alots",
+    "description": "Customized Laravel SMS APIs for alots",
     "keywords": [
       "laravel", "laravel sms", "sms laravel", "alots sms","alots sms laravel", "laravel alots sms"
     ],
@@ -8,28 +8,28 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Bhavin Rudani",
-            "email": "bhavinrudani94@gmail.com"
+            "name": "Musaddiq Durrani",
+            "email": "contact@durranilab.com"
         }
     ],
     "require": {
         "php": ">=5.6.0",
         "illuminate/support": "^5.4 || ^6.0 || ^7.0 || ^8.0",
         "illuminate/database": "^5.4 || ^6.0 || ^7.0 || ^8.0",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.3.1"
     },
     "autoload": {
         "psr-4": {
-            "Bhavinjr\\Alots\\": "src/"
+            "Durranilab\\Alots\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Bhavinjr\\Alots\\Providers\\AlotsServiceProvider"
+                "Durranilab\\Alots\\Providers\\AlotsServiceProvider"
             ],
             "aliases": {
-                "Alots": "Bhavinjr\\Alots\\Facades\\Alots"
+                "Alots": "Durranilab\\Alots\\Facades\\Alots"
             }
         }
     },

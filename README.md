@@ -4,16 +4,16 @@ A simple alots sms gateway implementation for Laravel 5.*|6.*|7.*
 
 For more information please visit:- https://www.alots.in/
 
-[![Latest Stable Version](https://poser.pugx.org/bhavinjr/laravel-alots/v/stable)](https://packagist.org/packages/bhavinjr/laravel-alots)
-[![Total Downloads](https://poser.pugx.org/bhavinjr/laravel-alots/downloads)](https://packagist.org/packages/bhavinjr/laravel-alots)
-[![License](https://poser.pugx.org/bhavinjr/laravel-alots/license)](https://packagist.org/packages/bhavinjr/laravel-alots)
+[![Latest Stable Version](https://poser.pugx.org/bhavinjr/laravel-alots/v/stable)](https://packagist.org/packages/durranilab/laravel-alots)
+[![Total Downloads](https://poser.pugx.org/bhavinjr/laravel-alots/downloads)](https://packagist.org/packages/durranilab/laravel-alots)
+[![License](https://poser.pugx.org/bhavinjr/laravel-alots/license)](https://packagist.org/packages/durranilab/laravel-alots)
 
 ## Installation
 
 First, you'll need to install the package via Composer:
 
 ```shell
-$ composer require bhavinjr/laravel-alots
+$ composer require durranilab/laravel-alots
 ```
 
 If you are don't use using Laravel 5.5.* Then, update `config/app.php` by adding an entry for the service provider.
@@ -22,12 +22,12 @@ If you are don't use using Laravel 5.5.* Then, update `config/app.php` by adding
 ```php
 'providers' => [
     // ...
-    Bhavinjr\Alots\Providers\AlotsServiceProvider::class,
+    Durranilab\Alots\Providers\AlotsServiceProvider::class,
 ];
 
 'aliases' => [
     //...
-    "Alots": "Bhavinjr\Alots\Facades\Alots",
+    "Alots": "Durranilab\Alots\Facades\Alots",
 ];
 ```
 
@@ -38,7 +38,7 @@ php artisan config:cache
 
 In command line again, publish the default configuration file:
 ```shell
-php artisan vendor:publish --provider="Bhavinjr\Alots\Providers\AlotsServiceProvider"
+php artisan vendor:publish --provider="Durranilab\Alots\Providers\AlotsServiceProvider"
 ```
 
 In command line paste this command:

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bhavinjr\Alots\Facades;
+namespace Durranilab\Alots\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bhavinjr\Alots;
+namespace Durranilab\Alots;
 
 use GuzzleHttp\Client;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bhavinjr\Alots\Errors;
+namespace Durranilab\Alots\Errors;
 
 use Exception;
 
